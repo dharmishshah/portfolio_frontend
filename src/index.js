@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 import HomePage from "./Components/HomePage";
+import PortfolioList from "./Containers/PortfolioList";
 
 ReactDOM.render(
   <React.StrictMode>
-    <HomePage />
+    <PortfolioList />
   </React.StrictMode>,
   document.getElementById('root')
 );
