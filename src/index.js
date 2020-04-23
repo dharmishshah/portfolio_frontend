@@ -4,10 +4,11 @@ import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 import HomePage from "./Components/HomePage";
 import PortfolioList from "./Containers/PortfolioList";
+import HomePageContainer from "./Containers/HomePageContainer";
 
 ReactDOM.render(
   <React.StrictMode>
-    <PortfolioList />
+    <HomePageContainer />
   </React.StrictMode>,
   document.getElementById('root')
 );
