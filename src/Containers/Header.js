@@ -26,7 +26,7 @@ export default class HomePageContainer extends Component {
                             className="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
                             type="button" data-toggle="collapse" data-target="#navbarResponsive"
                             aria-controls="navbarResponsive" aria-expanded="false"
-                            aria-label="Toggle navigation">Menu <i className="fas fa-bars"></i></button>
+                            aria-label="Toggle navigation">Tap <i className="fas fa-bars"></i></button>
                         <div className="collapse navbar-collapse" id="navbarResponsive">
                             <ul className="navbar-nav ml-auto">
                                 <li className="nav-item mx-0 mx-lg-1"><a

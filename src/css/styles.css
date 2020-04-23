@@ -405,6 +405,10 @@ h6, .h6 {
   font-weight: 300;
 }
 
+.aboutme-text {
+  text-align: start;
+}
+
 .display-1 {
   font-size: 6rem;
   font-weight: 300;
@@ -10074,7 +10078,7 @@ h3 {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 1.5rem;
+    padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     transition: padding-top 0.3s, padding-bottom 0.3s;
   }
@@ -10119,7 +10123,7 @@ h3 {
 
 @media (min-width: 992px) {
   .masthead {
-    padding-top: calc(6rem + 104px);
+    padding-top: calc(6rem + 10px);
     padding-bottom: 6rem;
   }
   .masthead .masthead-heading {
