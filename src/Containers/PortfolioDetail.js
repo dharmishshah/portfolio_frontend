@@ -56,7 +56,7 @@ export default class PortfolioDetail extends Component {
                                 <div
                                     className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                     <div className="portfolio-item-caption-content text-center text-white"><i
-                                        className="fas fa-plus fa-3x"></i></div>
+                                        className="fas fa-expand fa-3x"></i></div>
                                 </div>
                                 <p className="page-section-paragraph text-center text-uppercase text-secondary mb-0">
                                     Education</p>
@@ -69,7 +69,7 @@ export default class PortfolioDetail extends Component {
                                 <div
                                     className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                     <div className="portfolio-item-caption-content text-center text-white"><i
-                                        className="fas fa-plus fa-3x"></i></div>
+                                        className="fas fa-expand fa-3x"></i></div>
                                 </div>
                                 <p className="page-section-paragraph text-center text-uppercase text-secondary mb-0">
                                     Experience</p>
@@ -83,7 +83,7 @@ export default class PortfolioDetail extends Component {
                                 <div
                                     className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                     <div className="portfolio-item-caption-content text-center text-white"><i
-                                        className="fas fa-plus fa-3x"></i></div>
+                                        className="fas fa-expand fa-3x"></i></div>
                                 </div>
                                 <p className="page-section-paragraph text-center text-uppercase text-secondary mb-0">
                                     Skills</p>
@@ -96,7 +96,7 @@ export default class PortfolioDetail extends Component {
                                 <div
                                     className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                     <div className="portfolio-item-caption-content text-center text-white"><i
-                                        className="fas fa-plus fa-3x"></i></div>
+                                        className="fas fa-expand fa-3x"></i></div>
                                 </div>
                                 <p className="page-section-paragraph text-center text-uppercase text-secondary mb-0">
                                     Projects</p>
@@ -109,7 +109,7 @@ export default class PortfolioDetail extends Component {
                                 <div
                                     className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                     <div className="portfolio-item-caption-content text-center text-white"><i
-                                        className="fas fa-plus fa-3x"></i></div>
+                                        className="fas fa-expand fa-3x"></i></div>
                                 </div>
                                 <p className="page-section-paragraph text-center text-uppercase text-secondary mb-0">
                                     Publications</p>
@@ -122,7 +122,7 @@ export default class PortfolioDetail extends Component {
                                 <div
                                     className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                     <div className="portfolio-item-caption-content text-center text-white"><i
-                                        className="fas fa-plus fa-3x"></i></div>
+                                        className="fas fa-expand fa-3x"></i></div>
                                 </div>
                                 <p className="page-section-paragraph text-center text-uppercase text-secondary mb-0">
                                     Personal</p>

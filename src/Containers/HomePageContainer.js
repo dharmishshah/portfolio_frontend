@@ -29,7 +29,7 @@ export default class HomePageContainer extends Component {
                 <Header />
                 <Portfolio />
                 <PortfolioDetail/>
-                <About />ujujhnhu
+                <About />
                 <Contact />
                 <Footer />
 

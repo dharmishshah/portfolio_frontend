@@ -1,11 +1,16 @@
-import React, { Component } from 'react';
+import React, {Component, createRef} from 'react';
 import PortfolioService from "../Services/PortfolioServices";
 import cookie from "react-cookies";
+
 
 export default class HomePageContainer extends Component {
     constructor() {
         super();
         this.portfolioService = PortfolioService.instance;
+        this.name = createRef();
+        this.organisation = createRef();
+        this.email = createRef();
+        this.message = createRef();
 
         this.state = {
             experiences: [],
@@ -13,6 +18,18 @@ export default class HomePageContainer extends Component {
             skills: [],
             projects: []
         };
+    }
+
+    componentWillMount() {
+        // this.sendEmail();
+    }
+
+    sendEmail(){
+        var name = this.name.current.value;
+        var organisation = this.organisation.current.value;
+        var email = this.email.current.value;
+        var message = this.message.current.value;
+        console.log("send email" + name);
     }
 
     render() {
@@ -31,36 +48,36 @@ export default class HomePageContainer extends Component {
                             <div className="col-lg-8 mx-auto">
                                <form id="contactForm" name="sentMessage" noValidate="novalidate">
                                     <div className="control-group">
-                                        <div className="form-group floating-label-form-group controls mb-0 pb-2">
+                                        <div className="form-group floating-label-form-group controls mb-0">
                                             <label>Name</label><input className="form-control" id="name" type="text"
-                                                                      placeholder="Name" required="required"
+                                                                      placeholder="Name" required="required" ref={this.name}
                                                                       data-validation-required-message="Please enter your name."/>
                                             <p className="help-block text-danger"></p>
                                         </div>
                                     </div>
                                     <div className="control-group">
-                                        <div className="form-group floating-label-form-group controls mb-0 pb-2">
+                                        <div className="form-group floating-label-form-group controls mb-0">
                                             <label>Email Address</label><input className="form-control" id="email"
                                                                                type="email" placeholder="Email Address"
-                                                                               required="required"
+                                                                               required="required" ref={this.email}
                                                                                data-validation-required-message="Please enter your email address."/>
                                             <p className="help-block text-danger"></p>
                                         </div>
                                     </div>
                                     <div className="control-group">
-                                        <div className="form-group floating-label-form-group controls mb-0 pb-2">
-                                            <label>Phone Number</label><input className="form-control" id="phone"
-                                                                              type="tel" placeholder="Phone Number"
-                                                                              required="required"
-                                                                              data-validation-required-message="Please enter your phone number."/>
+                                        <div className="form-group floating-label-form-group controls mb-0">
+                                            <label>Organisation</label><input className="form-control" id="phone"
+                                                                              type="text" placeholder="Company"
+                                                                              required="required" ref={this.organisation}
+                                                                              data-validation-required-message="Please enter your organisation."/>
                                             <p className="help-block text-danger"></p>
                                         </div>
                                     </div>
                                     <div className="control-group">
-                                        <div className="form-group floating-label-form-group controls mb-0 pb-2">
+                                        <div className="form-group floating-label-form-group controls mb-0">
                                             <label>Message</label><textarea className="form-control" id="message"
                                                                             rows="5" placeholder="Message"
-                                                                            required="required"
+                                                                            required="required" ref={this.message}
                                                                             data-validation-required-message="Please enter a message."></textarea>
                                             <p className="help-block text-danger"></p>
                                         </div>
@@ -68,7 +85,8 @@ export default class HomePageContainer extends Component {
                                     <br/>
                                     <div id="success"></div>
                                     <div className="form-group">
-                                        <button className="btn btn-primary btn-xl" id="sendMessageButton"
+                                        <button className="btn btn-primary btn-sendmail" id="sendMessageButton"
+                                                onClick={() => this.sendEmail()}
                                                 type="submit">Send
                                         </button>
                                     </div>
