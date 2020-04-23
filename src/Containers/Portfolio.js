@@ -19,7 +19,7 @@ export default class Portfolio extends Component {
     }
     render() {
         return (
-            <div>
+            <div id="portfolio">
                 <header className="masthead bg-primary text-white text-center">
                     <div className="container d-flex align-items-center flex-column">
                         <img className="masthead-avatar mb-5"

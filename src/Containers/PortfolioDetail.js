@@ -10,6 +10,18 @@ import skills from "../images/img/portfolio/circus.png"
 import projects from "../images/img/portfolio/game.png"
 import resume from "../images/img/portfolio/safe.png"
 import personal from "../images/img/portfolio/submarine.png"
+import PortfolioModal from "./PortfolioModal";
+
+import education_ai from "../images/effects/education.gif"
+import experience_ai from "../images/effects/experience.gif"
+import skills_ai from "../images/effects/skills.gif"
+import projects_ai from "../images/effects/projects.gif"
+import pub_ai from "../images/effects/publications.gif"
+import personal_ai from "../images/effects/personal.gif"
+
+
+
+
 
 export default class PortfolioDetail extends Component {
     constructor() {
@@ -22,11 +34,12 @@ export default class PortfolioDetail extends Component {
             skills: [],
             projects: []
         };
+
     }
 
     render() {
         return (
-            <section className="page-section portfolio" id="portfolio">
+            <section className="page-section portfolio" id="portfolioDetail">
                 <div className="container">
                     <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
                     <div className="divider-custom">
@@ -34,6 +47,8 @@ export default class PortfolioDetail extends Component {
                         <div className="divider-custom-icon"><i className="fa fa-info-circle fa-fw"></i></div>
                         <div className="divider-custom-line"></div>
                     </div>
+
+
                     <div className="row">
                         <div className="col-md-6 col-lg-4 mb-5">
                             <div className="portfolio-item mx-auto" data-toggle="modal"
@@ -45,7 +60,7 @@ export default class PortfolioDetail extends Component {
                                 </div>
                                 <p className="page-section-paragraph text-center text-uppercase text-secondary mb-0">
                                     Education</p>
-                                <img className="img-fluid" src={education} alt=""/>
+                                <img className="img-fluid" src={education_ai} alt=""/>
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-4 mb-5">
@@ -58,7 +73,7 @@ export default class PortfolioDetail extends Component {
                                 </div>
                                 <p className="page-section-paragraph text-center text-uppercase text-secondary mb-0">
                                     Experience</p>
-                                <img className="img-fluid" src={experience} alt=""/>
+                                <img className="img-fluid" src={experience_ai} alt=""/>
 
                             </div>
                         </div>
@@ -72,7 +87,7 @@ export default class PortfolioDetail extends Component {
                                 </div>
                                 <p className="page-section-paragraph text-center text-uppercase text-secondary mb-0">
                                     Skills</p>
-                                <img className="img-fluid" src={skills} alt=""/>
+                                <img className="img-fluid" src={skills_ai} alt=""/>
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-4 mb-5 mb-lg-0">
@@ -85,7 +100,7 @@ export default class PortfolioDetail extends Component {
                                 </div>
                                 <p className="page-section-paragraph text-center text-uppercase text-secondary mb-0">
                                     Projects</p>
-                                <img className="img-fluid" src={projects} alt=""/>
+                                <img className="img-fluid" src={projects_ai} alt=""/>
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-4 mb-5 mb-md-0">
@@ -97,8 +112,8 @@ export default class PortfolioDetail extends Component {
                                         className="fas fa-plus fa-3x"></i></div>
                                 </div>
                                 <p className="page-section-paragraph text-center text-uppercase text-secondary mb-0">
-                                    Resume</p>
-                                <img className="img-fluid" src={resume} alt=""/>
+                                    Publications</p>
+                                <img className="img-fluid" src={pub_ai} alt=""/>
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-4">
@@ -111,9 +126,10 @@ export default class PortfolioDetail extends Component {
                                 </div>
                                 <p className="page-section-paragraph text-center text-uppercase text-secondary mb-0">
                                     Personal</p>
-                                <img className="img-fluid" src={personal} alt=""/>
+                                <img className="img-fluid" src={personal_ai} alt=""/>
                             </div>
                         </div>
+                        <PortfolioModal />
                     </div>
                 </div>
             </section>

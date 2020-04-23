@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PortfolioService from "../Services/PortfolioServices";
 import cookie from "react-cookies";
 
-export default class HomePageContainer extends Component {
+export default class About extends Component {
     constructor() {
         super();
         this.portfolioService = PortfolioService.instance;

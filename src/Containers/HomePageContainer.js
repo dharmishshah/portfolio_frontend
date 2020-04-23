@@ -5,7 +5,7 @@ import cookie from "react-cookies";
 import Header from "./Header";
 import Portfolio from "./Portfolio";
 import PortfolioDetail from "./PortfolioDetail";
-import Section from "./About";
+import About from "./About";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import PortfolioModal from "./PortfolioModal";
@@ -25,18 +25,19 @@ export default class HomePageContainer extends Component {
 
     render() {
         return(
-            <div>
+            <div className="default-homepage">
                 <Header />
                 <Portfolio />
                 <PortfolioDetail/>
-                <PortfolioModal/>
-                <Section />
+                <About />ujujhnhu
                 <Contact />
                 <Footer />
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
                 <script src="public/mail/jqBootstrapValidation.js"></script>
+
                 <script src="public/mail/contact_me.js"></script>
                 <script src="scripts/scripts.js"></script>
             </div>
