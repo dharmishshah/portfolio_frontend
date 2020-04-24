@@ -9977,7 +9977,7 @@ h3 {
 
 .page-section-paragraph {
   line-height: 2rem;
-  font-size:1.25rem;
+  font-size:1.75rem;
   padding-bottom: 0.5rem;
 }
 @media (min-width: 992px) {
@@ -10136,9 +10136,9 @@ h3 {
 }
 .portfolio .portfolio-item {
   cursor: pointer;
-  position: relative;`
+  position: relative;
   display: block;
-  max-width: 15rem;
+  max-width: 17rem;
   border-radius: 0.5rem;
   overflow: hidden;
 }
