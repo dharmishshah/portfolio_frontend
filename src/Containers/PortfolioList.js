@@ -47,6 +47,24 @@ export default class PortofolioList extends Component {
         });
     }
 
+    findAllCertificates() {
+        this.portfolioService.findAllCertificates().then(certificates => {
+            this.setState({certificates: certificates})
+        });
+    }
+
+    findAllRecommendations() {
+        this.portfolioService.findAllRecommendations().then(recommendations => {
+            this.setState({recommendations: recommendations})
+        });
+    }
+
+    findAllPersonalInfo() {
+        this.portfolioService.findAllPersonalInfo().then(personal => {
+            this.setState({personal: personal})
+        });
+    }
+
     render() {
         return(
             <div>

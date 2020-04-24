@@ -7,9 +7,7 @@ import PortfolioList from "./Containers/PortfolioList";
 import HomePageContainer from "./Containers/HomePageContainer";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <HomePageContainer />
-  </React.StrictMode>,
+    <HomePageContainer />,
   document.getElementById('root')
 );
 registerServiceWorker();

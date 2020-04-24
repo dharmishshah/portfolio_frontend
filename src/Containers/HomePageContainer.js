@@ -9,6 +9,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import PortfolioModal from "./PortfolioModal";
+import EducationRow from "../Components/EducationRow";
 
 export default class HomePageContainer extends Component {
     constructor() {

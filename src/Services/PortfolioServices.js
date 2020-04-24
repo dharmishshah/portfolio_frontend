@@ -44,5 +44,26 @@ class PortfolioService {
                 response.json());
     }
 
+
+    findAllCertificates() {
+        return fetch(IP_ADDRESS + '/portfolio/getCertificates')
+            .then(response =>
+                response.json());
+    }
+
+    findAllRecommendations() {
+        return fetch(IP_ADDRESS + '/portfolio/getRecommendations')
+            .then(response =>
+                response.json());
+    }
+
+    findAllPersonalInfo() {
+        return fetch(IP_ADDRESS + '/portfolio/getPersonalInfo')
+            .then(response =>
+                response.json());
+    }
+
+
+
 }
 export default PortfolioService;

@@ -4,11 +4,12 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
-    "bootstrap": "^4.1.1",
+    "bootstrap": "^4.4.1",
     "bootstrap-social": "^5.1.1",
     "create-react-class": "^15.6.3",
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
+    "material-ui": "^0.20.2",
     "multer": "^1.3.0",
     "nuka-carousel": "^4.2.2",
     "prop-types": "^15.6.2",
@@ -16,7 +17,6 @@
     "qwest": "^4.5.0",
     "react": "^16.4.0",
     "react-bodymovin": "^2.0.0",
-    "react-bootstrap": "^0.32.1",
     "react-cookie": "^2.2.0",
     "react-cookies": "^0.1.0",
     "react-dom": "^16.4.0",
@@ -43,8 +43,9 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "@material-ui/core": "^4.9.11",
     "create-react-class": "^15.6.3",
-    "react-bootstrap": "^0.32.1",
+    "react-bootstrap": "^0.32.4",
     "react-cookie": "^2.2.0",
     "react-cookies": "^0.1.0",
     "react-fontawesome": "^1.6.1"

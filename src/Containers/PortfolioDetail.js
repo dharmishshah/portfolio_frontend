@@ -18,10 +18,7 @@ import skills_ai from "../images/effects/skills.gif"
 import projects_ai from "../images/effects/projects.gif"
 import pub_ai from "../images/effects/publications.gif"
 import personal_ai from "../images/effects/personal.gif"
-
-
-
-
+import recommendation from "../images/effects/recommendations.gif"
 
 export default class PortfolioDetail extends Component {
     constructor() {
@@ -112,7 +109,7 @@ export default class PortfolioDetail extends Component {
                                         className="fas fa-expand fa-3x"></i></div>
                                 </div>
                                 <p className="page-section-paragraph text-center text-uppercase text-secondary mb-0">
-                                    Publications</p>
+                                    Certificates </p>
                                 <img className="img-fluid" src={pub_ai} alt=""/>
                             </div>
                         </div>
@@ -125,7 +122,21 @@ export default class PortfolioDetail extends Component {
                                         className="fas fa-expand fa-3x"></i></div>
                                 </div>
                                 <p className="page-section-paragraph text-center text-uppercase text-secondary mb-0">
-                                    Personal</p>
+                                    Recommendations </p>
+                                <img className="img-fluid" src={recommendation} alt=""/>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 mb-5">
+                            <div className="portfolio-item mx-auto" data-toggle="modal"
+                                 data-target="#portfolioModal7">
+                                <div
+                                    className="portfolio-item-caption d-flex align-items-center justify-content-center
+                                    h-100 w-100">
+                                    <div className="portfolio-item-caption-content text-center text-white"><i
+                                        className="fas fa-expand fa-3x"></i></div>
+                                </div>
+                                <p className="page-section-paragraph text-center text-uppercase text-secondary mb-0">
+                                    Personal </p>
                                 <img className="img-fluid" src={personal_ai} alt=""/>
                             </div>
                         </div>
