@@ -13,10 +13,7 @@ export default class HomePageContainer extends Component {
         this.message = createRef();
 
         this.state = {
-            experiences: [],
-            education: [],
-            skills: [],
-            projects: []
+            status : ""
         };
     }
 
@@ -30,6 +27,13 @@ export default class HomePageContainer extends Component {
         var email = this.email.current.value;
         var message = this.message.current.value;
         console.log("send email" + name);
+        this.portfolioService.sendEmail(name, organisation, email, message).then(s => {
+            this.setState({status : "Success"})
+            this.name.current.value = "";
+            this.organisation.current.value = "";
+            this.email.current.value = "";
+            this.message.current.value = "";
+        });
     }
 
     render() {
@@ -51,7 +55,8 @@ export default class HomePageContainer extends Component {
                                         <div className="form-group floating-label-form-group controls mb-0">
                                             <label>Name</label><input className="form-control" id="name" type="text"
                                                                       placeholder="Name" required="required" ref={this.name}
-                                                                      data-validation-required-message="Please enter your name."/>
+                                                                      data-validation-required-message="Please enter your name."
+                                        />
                                             <p className="help-block text-danger"></p>
                                         </div>
                                     </div>

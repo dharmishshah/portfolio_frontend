@@ -63,6 +63,22 @@ class PortfolioService {
                 response.json());
     }
 
+    sendEmail(name, organisation, email, message){
+
+        let formData = new FormData();
+        formData.append('name', name);
+        formData.append('organisation', organisation);
+        formData.append('email', email);
+        formData.append('message', message);
+
+        return fetch(IP_ADDRESS + '/portfolio/sendEmail', {
+            method: 'post',
+            body: formData,
+        }).then( response =>
+            response.json()
+        );
+    }
+
 
 
 }
