@@ -5,25 +5,25 @@ import cookie from "react-cookies";
 import '../css/styles.css';
 import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
 
-export default class EducationRow extends Component {
+export default class PublicationRow extends Component {
 
     constructor() {
         super();
         this.portfolioService = PortfolioService.instance;
 
         this.state = {
-            certificates: [],
+            publications: [],
 
         };
     }
 
     componentDidMount() {
-        this.findAllCertificates();
+        this.findAllPublications();
     }
 
-    findAllCertificates() {
-        this.portfolioService.findAllCertificates().then(certificates => {
-            this.setState({certificates: certificates})
+    findAllPublications() {
+        this.portfolioService.findAllPublications().then(publications => {
+            this.setState({publications: publications})
         });
     }
 
@@ -32,25 +32,26 @@ export default class EducationRow extends Component {
     render() {
         return (
             <div>
-                {this.state.certificates.map(certificate => {
+                {this.state.publications.map(publication => {
                     return (
                         <div  style={{ paddingBottom: 10 }}>
                             <Card style={{ width: '52rem' }}>
-                                <CardBody className="text-left">
+                                <CardBody className="text-left" >
                                     <CardTitle >
-                                        {certificate.fields.name}
+                                        {publication.fields.name}
                                     </CardTitle>
-                                    <CardSubtitle className="mb-2 text-muted">{certificate.fields.organisation}
-                                        <p className="text-align">{certificate.fields.date}</p>
+                                    <CardSubtitle className="mb-2 text-muted">{publication.fields.organisation}
+                                    <p className="text-align">{publication.fields.date}</p>
                                     </CardSubtitle>
                                     <CardText className="description-font">
-                                        {certificate.fields.description}
+                                        {publication.fields.description}
                                     </CardText>
                                 </CardBody>
-                                <a className="align-items-center details-button"  href = {certificate.fields.link} target="_blank" >
-                                    <Button > View Certificate
+                                {publication.fields.link && <a className="align-items-center details-button"
+                                                               href = {publication.fields.link} target="_blank" >
+                                    <Button > View Paper
                                     </Button>
-                                </a>
+                                </a>}
                             </Card>
                         </div>
                     )

@@ -45,10 +45,10 @@ export default class EducationRow extends Component {
                                 <CardSubtitle className="mb-2 text-muted">{educate.fields.degree} in {educate.fields.major}
                                     <p className="text-align">{educate.fields.fromYear} - {educate.fields.toYear}</p>
                                 </CardSubtitle>
-                            <CardText>
+                            <CardText className="description-font">
                                 GPA : {educate.fields.gpa}
                             </CardText>
-                            <CardText>
+                            <CardText className="description-font">
                                 Courses : {educate.fields.courses}
                             </CardText>
                         </CardBody>

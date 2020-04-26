@@ -36,9 +36,9 @@ export default class ExperienceRow extends Component {
             <div>
                 {this.state.experiences.map(experience => {
                     return (
-                        <div className="text-left" style={{ paddingBottom: 10 }}>
-                            <Card style={{ width: '45rem' }}>
-                                <CardBody >
+                        <div style={{ paddingBottom: 10 }}>
+                            <Card style={{ width: '52rem' }}>
+                                <CardBody className="text-left">
                                     <CardTitle >
                                         {experience.fields.company}, {experience.fields.city}
                                     </CardTitle>
@@ -48,6 +48,15 @@ export default class ExperienceRow extends Component {
                                     <CardText>
                                         TechStack : {experience.fields.techStack}
                                     </CardText>
+                                    {experience.fields.description.split("\n").map(descrip => {
+                                        return (
+                                            <li className="description-font">
+                                                {descrip}
+                                            </li>
+                                        )
+                                    })}
+
+
                                 </CardBody>
                             </Card>
                         </div>

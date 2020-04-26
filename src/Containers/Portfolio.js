@@ -32,8 +32,8 @@ export default class Portfolio extends Component {
                             <div className="divider-custom-icon"><i className="fa fa-laptop fa-fw"></i></div>
                             <div className="divider-custom-line"></div>
                         </div>
-                        <p className="masthead-subheading font-weight-light mb-0">Software Engineer - Data Engineer -
-                            Web Developer</p>
+                        <p className="masthead-subheading font-weight-light mb-0">Software Engineer - Full Stack Developer
+                        - Data Engineer</p>
                         <div className="col-lg-4 mb-5 mb-lg-0">
                             <a className="btn btn-outline-light btn-social mx-1"
                                href="mailto: dharmish21@gmail.com"><i

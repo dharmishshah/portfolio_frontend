@@ -37,26 +37,26 @@ export default class EducationRow extends Component {
                 {this.state.skills.map(skill => {
                     return (
                         <div className="text-left" style={{ paddingBottom: 10 }}>
-                            <Card style={{ width: '45rem' }}>
+                            <Card style={{ width: '52rem' }}>
                                 <CardBody >
-                                    <CardTitle >
+                                    <CardText >
                                         Languages : {skill.fields.languages}
-                                    </CardTitle>
-                                    <CardTitle >
+                                    </CardText>
+                                    <CardText >
                                         Backend : {skill.fields.backend}
-                                    </CardTitle>
-                                    <CardTitle >
+                                    </CardText>
+                                    <CardText >
                                         Frontend : {skill.fields.frontend}
-                                    </CardTitle>
-                                    <CardTitle >
+                                    </CardText>
+                                    <CardText >
                                         Databases : {skill.fields.databases}
-                                    </CardTitle>
-                                    <CardTitle >
+                                    </CardText>
+                                    <CardText >
                                         Libraries : {skill.fields.libraries}
-                                    </CardTitle>
-                                    <CardTitle>
+                                    </CardText>
+                                    <CardText>
                                         Development : {skill.fields.development}
-                                    </CardTitle>
+                                    </CardText>
                                 </CardBody>
                             </Card>
                         </div>

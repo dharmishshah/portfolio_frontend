@@ -9148,8 +9148,17 @@ button.bg-dark:focus {
     margin-right: -1.5rem !important;
   }
 
+.mx-lg-n4 {
+    margin-right: -1.5rem !important;
+  }
+
+.mx-lg-n4 {
+    margin-right: -1.5rem !important;
+  }
+
   .mb-lg-n4,
 .my-lg-n4 {
+
     margin-bottom: -1.5rem !important;
   }
 
@@ -9167,7 +9176,9 @@ button.bg-dark:focus {
     margin-top: -3rem !important;
   }
 
+  .mr-lg-n5,  .mr-lg-n5,
   .mr-lg-n5,
+
 .mx-lg-n5 {
     margin-right: -3rem !important;
   }
@@ -9969,7 +9980,7 @@ h3 {
   }
 }
 .page-section {
-  padding: 6rem 0;
+  padding: 6rem 8rem;
 }
 .page-section .page-section-heading {
   line-height: 2rem;
@@ -9977,7 +9988,7 @@ h3 {
 
 .page-section-paragraph {
   line-height: 2rem;
-  font-size:1.75rem;
+  font-size:1.25rem;
   padding-bottom: 0.5rem;
 }
 @media (min-width: 992px) {
@@ -9985,6 +9996,14 @@ h3 {
     font-size: 3rem;
     line-height: 2.5rem;
   }
+}
+
+.description-font {
+  font-size: 15px;
+}
+
+.details-button {
+  padding-bottom: 15px;
 }
 
 .divider-custom {

@@ -40,18 +40,20 @@ export default class EducationRow extends Component {
                             <CardTitle >
                                 Interests
                             </CardTitle>
-                            <CardText>
-                                I love exploring new technologies in my free time.
-                            </CardText>
-                            <CardText>
-                                I am big soccer fan. #CHELSEAFC
-                            </CardText>
-                            <CardText>
-                                I enjoy music and dancing.
-                            </CardText>
-                            <CardText>
-                                I am a big fan of Bollywood.
-                            </CardText>
+                            <div className="description-font">
+                                <CardText>
+                                    I love exploring new technologies in my free time.
+                                </CardText>
+                                <CardText>
+                                    I am big soccer fan. #CHELSEAFC
+                                </CardText>
+                                <CardText>
+                                    I enjoy music and dancing.
+                                </CardText>
+                                <CardText>
+                                    I am a big fan of Bollywood.
+                                </CardText>
+                            </div>
                         </CardBody>
                     </Card>
                 </div>
@@ -59,10 +61,10 @@ export default class EducationRow extends Component {
                 <div className="text-left" style={{ paddingBottom: 10 }}>
                     <Card style={{ width: '45rem' }}>
                         <CardBody >
-                            <CardTitle >
+                            <CardTitle>
                                 Honors
                             </CardTitle>
-                            <CardText>
+                            <CardText className="description-font">
                                Ace Achiever of the Year 2015-2016, Justdial Limited
                             </CardText>
                         </CardBody>

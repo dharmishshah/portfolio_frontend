@@ -9,6 +9,7 @@ import Projects from "../Components/Projects";
 import Certificates from "../Components/Certificates";
 import Personal from "../Components/Personal";
 import Recommendations from "../Components/Recommendations";
+import Publications from "../Components/Publications";
 
 export default class HomePageContainer extends Component {
     constructor() {
@@ -66,7 +67,7 @@ export default class HomePageContainer extends Component {
                             <div className="modal-body text-center">
                                 <div className="container">
                                     <div className="row justify-content-center">
-                                        <div className="col-lg-8">
+                                        <div className="col-lg-9">
                                             <h2 className="portfolio-modal-title text-secondary text-uppercase mb-0">
                                                 Experience</h2>
                                             <div className="divider-custom">
@@ -94,7 +95,7 @@ export default class HomePageContainer extends Component {
             <div className="modal-body text-center">
                 <div className="container">
                     <div className="row justify-content-center">
-                        <div className="col-lg-8">
+                        <div className="col-lg-9">
                             <h2 className="portfolio-modal-title text-secondary text-uppercase mb-0">Skills</h2>
                             <div className="divider-custom">
                                 <div className="divider-custom-line"></div>
@@ -121,7 +122,7 @@ export default class HomePageContainer extends Component {
                             <div className="modal-body text-center">
                                 <div className="container">
                                     <div className="row justify-content-center">
-                                        <div className="col-lg-8">
+                                        <div className="col-lg-9">
                                             <h2 className="portfolio-modal-title text-secondary text-uppercase mb-0">
                                                 Projects</h2>
                                             <div className="divider-custom">
@@ -148,7 +149,7 @@ export default class HomePageContainer extends Component {
                             <div className="modal-body text-center">
                                 <div className="container">
                                     <div className="row justify-content-center">
-                                        <div className="col-lg-8">
+                                        <div className="col-lg-9">
                                             <h2 className="portfolio-modal-title text-secondary text-uppercase mb-0">
                                                 Certificates
                                             </h2>
@@ -177,7 +178,7 @@ export default class HomePageContainer extends Component {
                             <div className="modal-body text-center">
                                 <div className="container">
                                     <div className="row justify-content-center">
-                                        <div className="col-lg-8">
+                                        <div className="col-lg-9">
                                             <h2 className="portfolio-modal-title text-secondary text-uppercase mb-0">
                                                 Recommendation </h2>
                                             <div className="divider-custom">
@@ -204,6 +205,34 @@ export default class HomePageContainer extends Component {
                             <div className="modal-body text-center">
                                 <div className="container">
                                     <div className="row justify-content-center">
+                                        <div className="col-lg-9">
+                                            <h2 className="portfolio-modal-title text-secondary text-uppercase mb-0">
+                                                Publication </h2>
+                                            <div className="divider-custom">
+                                                <div className="divider-custom-line"></div>
+                                                <div className="divider-custom-icon"><i className="fas fa-star"></i>
+                                                </div>
+                                                <div className="divider-custom-line"></div>
+                                            </div>
+                                            <Publications />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="portfolio-modal modal fade" id="portfolioModal8" tabIndex="-1" role="dialog"
+                     aria-labelledby="portfolioModal6Label" aria-hidden="true">
+                    <div className="modal-dialog modal-xl" role="document">
+                        <div className="modal-content">
+                            <button className="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true"><i className="fas fa-times"></i></span>
+                            </button>
+                            <div className="modal-body text-center">
+                                <div className="container">
+                                    <div className="row justify-content-center">
                                         <div className="col-lg-8">
                                             <h2 className="portfolio-modal-title text-secondary text-uppercase mb-0">
                                                 Personal </h2>
@@ -213,7 +242,7 @@ export default class HomePageContainer extends Component {
                                                 </div>
                                                 <div className="divider-custom-line"></div>
                                             </div>
-                                            <Personal/>
+                                            <Personal />
                                         </div>
                                     </div>
                                 </div>

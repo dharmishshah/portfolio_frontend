@@ -3,13 +3,6 @@ import PortfolioService from "../Services/PortfolioServices";
 import cookie from "react-cookies";
 import '../css/styles.css'
 
-
-import education from "../images/img/portfolio/cabin.png"
-import experience from "../images/img/portfolio/cake.png"
-import skills from "../images/img/portfolio/circus.png"
-import projects from "../images/img/portfolio/game.png"
-import resume from "../images/img/portfolio/safe.png"
-import personal from "../images/img/portfolio/submarine.png"
 import PortfolioModal from "./PortfolioModal";
 
 import education_ai from "../images/effects/education.gif"
@@ -19,6 +12,7 @@ import projects_ai from "../images/effects/projects.gif"
 import pub_ai from "../images/effects/publications.gif"
 import personal_ai from "../images/effects/personal.gif"
 import recommendation from "../images/effects/recommendations.gif"
+import publication from "../images/effects/publication.gif"
 
 export default class PortfolioDetail extends Component {
     constructor() {
@@ -136,10 +130,25 @@ export default class PortfolioDetail extends Component {
                                         className="fas fa-expand fa-3x"></i></div>
                                 </div>
                                 <p className="page-section-paragraph text-center text-uppercase text-secondary mb-0">
+                                    Publication </p>
+                                <img className="img-fluid" src={publication} alt=""/>
+                            </div>
+                        </div>
+
+                        <div className="col-md-6 col-lg-4 mb-5 mb-md-0">
+                            <div className="portfolio-item mx-auto" data-toggle="modal"
+                                 data-target="#portfolioModal8">
+                                <div
+                                    className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div className="portfolio-item-caption-content text-center text-white"><i
+                                        className="fas fa-expand fa-3x"></i></div>
+                                </div>
+                                <p className="page-section-paragraph text-center text-uppercase text-secondary mb-0">
                                     Personal </p>
                                 <img className="img-fluid" src={personal_ai} alt=""/>
                             </div>
                         </div>
+
                         <PortfolioModal />
                     </div>
                 </div>

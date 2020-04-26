@@ -63,6 +63,12 @@ class PortfolioService {
                 response.json());
     }
 
+    findAllPublications() {
+        return fetch(IP_ADDRESS + '/portfolio/getPublications')
+            .then(response =>
+                response.json());
+    }
+
     sendEmail(name, organisation, email, message){
 
         let formData = new FormData();
