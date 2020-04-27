@@ -28,6 +28,7 @@ export default class HomePageContainer extends Component {
         var message = this.message.current.value;
         console.log("send email" + name);
         this.portfolioService.sendEmail(name, organisation, email, message).then(s => {
+            console.log("---" + s)
             this.setState({status : "Success"})
             this.name.current.value = "";
             this.organisation.current.value = "";
