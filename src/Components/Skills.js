@@ -37,25 +37,25 @@ export default class EducationRow extends Component {
                 {this.state.skills.map(skill => {
                     return (
                         <div className="text-left" style={{ paddingBottom: 10 }}>
-                            <Card style={{ width: '52rem' }}>
+                            <Card style={{ width: '100%' }}>
                                 <CardBody >
                                     <CardText >
-                                        Languages : {skill.fields.languages}
+                                        <b> Languages </b> : {skill.fields.languages}
                                     </CardText>
                                     <CardText >
-                                        Backend : {skill.fields.backend}
+                                        <b> Backend </b> : {skill.fields.backend}
                                     </CardText>
                                     <CardText >
-                                        Frontend : {skill.fields.frontend}
+                                        <b> Frontend </b>: {skill.fields.frontend}
                                     </CardText>
                                     <CardText >
-                                        Databases : {skill.fields.databases}
+                                        <b> Databases </b>: {skill.fields.databases}
                                     </CardText>
                                     <CardText >
-                                        Libraries : {skill.fields.libraries}
+                                        <b> Libraries </b>: {skill.fields.libraries}
                                     </CardText>
                                     <CardText>
-                                        Development : {skill.fields.development}
+                                        <b> Development </b>: {skill.fields.development}
                                     </CardText>
                                 </CardBody>
                             </Card>

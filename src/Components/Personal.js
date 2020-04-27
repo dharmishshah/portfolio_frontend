@@ -35,7 +35,7 @@ export default class EducationRow extends Component {
         return (
             <div>
                 <div className="text-left" style={{ paddingBottom: 10 }}>
-                    <Card style={{ width: '45rem' }}>
+                    <Card style={{ width: '100%' }}>
                         <CardBody >
                             <CardTitle >
                                 Interests
@@ -58,18 +58,7 @@ export default class EducationRow extends Component {
                     </Card>
                 </div>
 
-                <div className="text-left" style={{ paddingBottom: 10 }}>
-                    <Card style={{ width: '45rem' }}>
-                        <CardBody >
-                            <CardTitle>
-                                Honors
-                            </CardTitle>
-                            <CardText className="description-font">
-                               Ace Achiever of the Year 2015-2016, Justdial Limited
-                            </CardText>
-                        </CardBody>
-                    </Card>
-                </div>
+
             </div>
         )
     }

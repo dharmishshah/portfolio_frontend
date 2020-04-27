@@ -35,7 +35,7 @@ export default class EducationRow extends Component {
                 {this.state.certificates.map(certificate => {
                     return (
                         <div  style={{ paddingBottom: 10 }}>
-                            <Card style={{ width: '52rem' }}>
+                            <Card style={{ width: '100%' }}>
                                 <CardBody className="text-left">
                                     <CardTitle >
                                         {certificate.fields.name}

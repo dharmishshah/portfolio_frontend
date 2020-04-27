@@ -37,7 +37,7 @@ export default class ExperienceRow extends Component {
                 {this.state.experiences.map(experience => {
                     return (
                         <div style={{ paddingBottom: 10 }}>
-                            <Card style={{ width: '52rem' }}>
+                            <Card style={{ width: '100%' }}>
                                 <CardBody className="text-left">
                                     <CardTitle >
                                         {experience.fields.company}, {experience.fields.city}

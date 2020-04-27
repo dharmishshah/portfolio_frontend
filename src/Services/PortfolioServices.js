@@ -81,7 +81,7 @@ class PortfolioService {
             method: 'post',
             body: formData,
         }).then( response =>
-            response.json()
+            response
         );
     }
 

@@ -35,7 +35,7 @@ export default class EducationRow extends Component {
                 {this.state.recommendations.map(recommendation => {
                     return (
                         <div className="text-left" style={{ paddingBottom: 10 }}>
-                            <Card style={{ width: '52rem' }}>
+                            <Card style={{ width: '100%' }}>
                                 <CardBody >
                                     <CardTitle >
                                         {recommendation.fields.name}

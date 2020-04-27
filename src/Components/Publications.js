@@ -35,7 +35,7 @@ export default class PublicationRow extends Component {
                 {this.state.publications.map(publication => {
                     return (
                         <div  style={{ paddingBottom: 10 }}>
-                            <Card style={{ width: '52rem' }}>
+                            <Card style={{ width: '100%' }}>
                                 <CardBody className="text-left" >
                                     <CardTitle >
                                         {publication.fields.name}

@@ -37,7 +37,7 @@ export default class EducationRow extends Component {
                 {this.state.projects.map(project => {
                     return (
                         <div style={{ paddingBottom: 10 }}>
-                            <Card style={{ width: '52rem' }}>
+                            <Card style={{ width: '100%' }}>
                                 <CardBody className="text-left"  >
                                     <CardTitle >
                                         {project.fields.name}, {project.fields.city}

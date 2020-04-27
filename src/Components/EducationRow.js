@@ -37,7 +37,7 @@ export default class EducationRow extends Component {
                 {this.state.education.map(educate => {
                 return (
                     <div className="text-left" style={{ paddingBottom: 10 }}>
-                        <Card style={{ width: '45rem' }}>
+                        <Card style={{ width: '100%' }}>
                         <CardBody >
                             <CardTitle >
                                 {educate.fields.name}, {educate.fields.city}
