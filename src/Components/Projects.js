@@ -53,7 +53,7 @@ export default class EducationRow extends Component {
                                                 {descrip}
                                             </li>
                                         )
-                                    })}certificate
+                                    })}
                                 </CardBody>
                                 {project.fields.link && <a className="align-items-center details-button"
                                                            href = {project.fields.link} target="_blank" >
