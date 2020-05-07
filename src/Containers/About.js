@@ -61,7 +61,7 @@ export default class About extends Component {
                         </div>
                         <div className="text-center mt-4">
                             <a className="btn btn-xl btn-outline-light"
-                               target="_blank" href="https://portfolio-personal123.s3.amazonaws.com/DharmishShahResume_3_Mar_SE.pdf"><i
+                               target="_blank" href="https://portfolio-personal123.s3.amazonaws.com/Resume_Dharmish_Shah_BOS.pdf"><i
                                 className="fa fa-file fa-fw"></i>Have a look at my Resume</a>
                         </div>
                     </div>
