@@ -7,16 +7,17 @@ import logo from '../images/img/avataaars.svg'
 import p1 from '../images/img/p1.png'
 import facebook from '../images/effects/cart.gif'
 
+import ReactRotatingText from 'react-rotating-text';
+
+
+
 export default class Portfolio extends Component {
     constructor() {
         super();
         this.portfolioService = PortfolioService.instance;
 
         this.state = {
-            experiences: [],
-            education: [],
-            skills: [],
-            projects: []
+           test :['Software Engineer', 'Full Stack Developer','Data Engineer', 'Web Developer', 'Database Developer']
         };
     }
     render() {
@@ -32,8 +33,10 @@ export default class Portfolio extends Component {
                             <div className="divider-custom-icon"><i className="fa fa-laptop fa-fw"></i></div>
                             <div className="divider-custom-line"></div>
                         </div>
-                        <p className="masthead-subheading font-weight-light mb-0">Software Engineer - Full Stack Developer
-                        - Data Engineer</p>
+                        <p className="masthead-subheading font-weight-light mb-0"> I'm a {" "}
+                            <ReactRotatingText className="masthead-subheading font-weight-light mb-0" items= {this.state.test} />
+                        </p>
+
                         <div className="col-lg-4 mb-5 mb-lg-0">
                             <a className="btn btn-outline-light btn-social mx-1"
                                href="mailto: dharmish21@gmail.com"><i

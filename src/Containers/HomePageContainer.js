@@ -10,6 +10,9 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import PortfolioModal from "./PortfolioModal";
 import EducationRow from "../Components/EducationRow";
+import Skills from "../Components/Skills";
+import WorkTogether from "./WorkTogether";
+import SkillsMain from "./SkillsMain";
 
 export default class HomePageContainer extends Component {
     constructor() {
@@ -31,6 +34,8 @@ export default class HomePageContainer extends Component {
                 <Portfolio />
                 <PortfolioDetail/>
                 <About />
+                {/*<SkillsMain />*/}
+                {/*<WorkTogether />*/}
                 <Contact />
                 <Footer />
 

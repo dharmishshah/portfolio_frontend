@@ -10,11 +10,18 @@ export default class HomePageContainer extends Component {
         this.portfolioService = PortfolioService.instance;
 
         this.state = {
-            experiences: [],
-            education: [],
-            skills: [],
-            projects: []
+            details: []
         };
+    }
+
+    componentDidMount() {
+        this.findBasicDetails();
+    }
+
+    findBasicDetails() {
+        this.portfolioService.findBasicDetails().then(details => {
+            this.setState({details: details})
+        });
     }
 
     render() {
@@ -25,7 +32,8 @@ export default class HomePageContainer extends Component {
                         <div className="row">
                             <div className="col-lg-4 mb-5 mb-lg-0">
                                 <h4 className="text-uppercase mb-4">Location</h4>
-                                <p className="lead mb-0">Boston, MA 02120 </p>
+                                <p className="lead mb-0">{this.state.details.length > 0
+                                && this.state.details[0].fields.location}</p>
                             </div>
                             <div className="col-lg-4 mb-5 mb-lg-0">
                                 <h4 className="text-uppercase mb-4">Around the Web</h4>
@@ -34,16 +42,16 @@ export default class HomePageContainer extends Component {
                                     className="fa fa-google fa-fw"></i></a>
                                <a
                                 className="btn btn-outline-light btn-social mx-1"
-                                href="https://www.linkedin.com/in/dharmish-shah" target="_blank"><i
+                                href={this.state.details.length > 0 && this.state.details[0].fields.linkedin} target="_blank"><i
                                 className="fa fa-linkedin fa-fw"></i></a><a
                                 className="btn btn-outline-light btn-social mx-1"
-                                href="https://www.github.com/dharmishshah" target="_blank"><i
+                                href={this.state.details.length > 0 && this.state.details[0].fields.github} target="_blank"><i
                                 className="fa fa-github fa-fw"></i></a>
 
                             </div>
                             <div className="col-lg-4">
                                 <h4 className="text-uppercase mb-4">Feel Free to reach out</h4>
-                                <p className="lead mb-0"> Drop me an email for any queries/suggestions</p>
+                                <p className="lead mb-0"> {this.state.details.length > 0 && this.state.details[0].fields.mobile} </p>
                             </div>
                         </div>
                     </div>

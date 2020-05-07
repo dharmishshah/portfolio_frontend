@@ -69,6 +69,12 @@ class PortfolioService {
                 response.json());
     }
 
+    findBasicDetails() {
+        return fetch(IP_ADDRESS + '/portfolio/getBasicDetails')
+            .then(response =>
+                response.json());
+    }
+
     sendEmail(name, organisation, email, message){
 
         let formData = new FormData();
