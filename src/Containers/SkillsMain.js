@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 import PortfolioService from "../Services/PortfolioServices";
-import cookie from "react-cookies";
 import '../css/styles.css'
-import { Fade, Random } from 'react-animation-components'
-import {Animated} from "react-animated-css";
+import {Animated} from "react-animated-css"
 
-import handleViewport from 'react-in-viewport'
-
-
+import VisibilitySensor from "react-visibility-sensor"
 
 import IconAmazonwebservices from 'react-devicon/amazonwebservices/plain-wordmark'
 import IconJava from 'react-devicon/java/plain-wordmark'
@@ -39,9 +35,6 @@ import spark from "../images/skills/spark.png"
 import rabbit from "../images/skills/rabbit.png"
 import jira from "../images/skills/jira.webp"
 import jenkins from "../images/skills/jenkins.webp"
-import ReactVisibilitySensor from 'react-visibility-sensor'
-import Example from "./Example";
-import VisibilitySensor from "react-visibility-sensor";
 
 
 export default class SkillsMain extends Component {
