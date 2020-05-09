@@ -233,12 +233,10 @@ export default class SkillsMain extends Component {
                             </Animated>
                         </div>
                         <div className="col-md-3 col-lg-2 mb-5">
-                            <VisibilitySensor onChange={this.onChangeInfo}>
                             <Animated animationIn={this.state.animationleftIn} animationOut={this.state.animationleftOut}
                                       isVisible={this.state.isVisible}>
                             <span><IconNodejs height={this.state.height} width ={this.state.width}/></span>
                             </Animated>
-                            </VisibilitySensor>
                         </div>
 
 
