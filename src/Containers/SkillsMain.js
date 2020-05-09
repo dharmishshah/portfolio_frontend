@@ -58,18 +58,27 @@ export default class SkillsMain extends Component {
             width : 80,
             items : ['a','b','c'],
             isVisible : false,
+            skillsButtonVisible : false,
+            moreInfoButtonVisible : false,
             animationleftIn : "bounceInLeft",
             animationleftOut : "bounceOutLeft",
             animationRightIn : "bounceInRight",
             animationRightOut : "bounceOutRight",
         };
         this.onChange = this.onChange.bind(this);
-
+        this.onChangeInfo = this.onChangeInfo.bind(this);
     }
 
     onChange (isVisible) {
         console.log('Element is now %s', isVisible ? 'visible' : 'hidden');
-        this.setState({isVisible: isVisible})
+        this.setState({skillsButtonVisible: isVisible})
+        this.setState({isVisible : this.state.moreInfoButtonVisible || isVisible})
+    }
+
+    onChangeInfo (isVisible) {
+        console.log('Element is now %s', isVisible ? 'visible' : 'hidden');
+        this.setState({moreInfoButtonVisible: isVisible})
+        this.setState({isVisible : this.state.skillsButtonVisible || isVisible})
     }
 
     render() {
@@ -231,10 +240,12 @@ export default class SkillsMain extends Component {
                             </Animated>
                         </div>
                         <div className="col-md-3 col-lg-2 mb-5">
+                            <VisibilitySensor onChange={this.onChangeInfo}>
                             <Animated animationIn={this.state.animationleftIn} animationOut={this.state.animationleftOut}
                                       isVisible={this.state.isVisible}>
                             <span><IconNodejs height={this.state.height} width ={this.state.width}/></span>
                             </Animated>
+                            </VisibilitySensor>
                         </div>
 
 
@@ -275,10 +286,12 @@ export default class SkillsMain extends Component {
                     </div>
 
                     <div className="form-group text-center mt-4">
+                        <VisibilitySensor onChange={this.onChangeInfo}>
                             <button className="btn btn-primary btn-sendmail" data-toggle="modal"
                                     data-target="#portfolioModal3"
                                     type="submit"> More Info <i className="fa fa-angle-double-right fa-fw"/>
                             </button>
+                        </VisibilitySensor>
                     </div>
                 </div>
             </section>
