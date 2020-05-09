@@ -93,7 +93,7 @@ export default class HomePageContainer extends Component {
                                     <div className="form-group">
                                         <button className="btn btn-primary btn-sendmail" id="sendMessageButton"
                                                 onClick={() => this.sendEmail()}
-                                                type="submit">Send
+                                                type="submit">Let's connect
                                         </button>
                                     </div>
                                 </form>

@@ -34,7 +34,7 @@ export default class Portfolio extends Component {
                             <div className="divider-custom-line"></div>
                         </div>
                         <p className="masthead-subheading font-weight-light mb-0"> I'm a {" "}
-                            <ReactRotatingText className="masthead-subheading font-weight-light mb-0" items= {this.state.test} />
+                            <ReactRotatingText  items= {this.state.test} />
                         </p>
 
                         <div className="col-lg-4 mb-5 mb-lg-0">

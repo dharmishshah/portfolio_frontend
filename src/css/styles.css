@@ -2564,7 +2564,7 @@ fieldset:disabled a.btn {
   border-color: #17a2b8;
 }
 .btn-sendmail{
-  padding: .5rem 3.75rem;
+  padding: -1rem 3.75rem;
   font-size: 1.25rem;
 }
 
@@ -2584,6 +2584,8 @@ fieldset:disabled a.btn {
   background-color: #17a2b8;
   border-color: #17a2b8;
 }
+
+
 .btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active, .show > .btn-info.dropdown-toggle {
   color: #fff;
   background-color: #117a8b;
@@ -9988,7 +9990,7 @@ h3 {
 
 .page-section-paragraph {
   line-height: 2rem;
-  font-size:1.25rem;
+  font-size:1.1rem;
   padding-bottom: 0.5rem;
 }
 @media (min-width: 992px) {
@@ -10158,7 +10160,7 @@ h3 {
   cursor: pointer;
   position: relative;
   display: block;
-  max-width: 17rem;
+  max-width: 10rem;
   border-radius: 0.5rem;
   overflow: hidden;
 }
@@ -10254,4 +10256,29 @@ form .row:first-child .floating-label-form-group {
 
 .copyright {
   background-color: #1a252f;
+}
+
+
+.typeDiv {
+  padding-top: 3rem;
+}
+.typeDiv .typeDiv-heading {
+  font-size: 1.25rem;
+  padding-bottom:0.75rem;
+}
+
+.example-component {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+.example-component.show {
+  opacity: 1;
+  visibility: visible;
 }

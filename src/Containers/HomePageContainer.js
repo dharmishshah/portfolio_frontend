@@ -28,14 +28,16 @@ export default class HomePageContainer extends Component {
     }
 
     render() {
+        const { isOpen, onClose, message } = this.props;
         return(
             <div className="default-homepage">
+
                 <Header />
                 <Portfolio />
                 <PortfolioDetail/>
                 <About />
-                {/*<SkillsMain />*/}
-                {/*<WorkTogether />*/}
+                <SkillsMain />
+                <WorkTogether />
                 <Contact />
                 <Footer />
 

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PortfolioService from "../Services/PortfolioServices";
 import cookie from "react-cookies";
+import ReactRotatingText from "react-rotating-text";
+import Typing from 'react-typing-animation'
 
 export default class About extends Component {
     constructor() {
@@ -8,7 +10,9 @@ export default class About extends Component {
         this.portfolioService = PortfolioService.instance;
 
         this.state = {
-            details : []
+            details : [],
+            typist : ['I am actively looking for full time software engineering roles.',
+            'I would be glad to set a time to call you for a quick chat to discuss my experiences in more details.']
         };
     }
 
@@ -33,10 +37,12 @@ export default class About extends Component {
                             <div className="divider-custom-icon"><i className="fa fa-users fa-fw"></i></div>
                             <div className="divider-custom-line"></div>
                         </div>
-                        <div className="row">
-                            <div className="col-lg-12 ml-auto"><p className="lead aboutme-text">
-                                I am actively looking for full time software engineering roles and
-                                I would love to set a time to call you for a quick chat to discuss my experiences in more details.
+                        <div className="row typeDiv">
+                            <div className=""><p className="typeDiv-heading font-weight-heavy mb-0 ">
+                                    <ReactRotatingText
+                                    items = {this.state.typist}>
+                                    </ReactRotatingText>
+
                             </p>
                             </div>
                         </div>
