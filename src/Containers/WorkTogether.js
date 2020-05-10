@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import PortfolioService from "../Services/PortfolioServices";
-import cookie from "react-cookies";
 import ReactRotatingText from "react-rotating-text";
-import Typing from 'react-typing-animation'
 import ScrollAnimation from "react-animate-on-scroll";
 
 export default class About extends Component {

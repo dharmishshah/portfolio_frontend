@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import PortfolioService from "../Services/PortfolioServices";
 import cookie from "react-cookies";
-import AOS from 'aos'
-import 'aos/dist/aos.css'
 import ScrollAnimation from 'react-animate-on-scroll';
 
 export default class About extends Component {
@@ -17,12 +15,6 @@ export default class About extends Component {
 
     componentDidMount() {
         this.findBasicDetails();
-        AOS.init({
-            offset: 200,
-            duration: 600,
-            easing: 'ease-in-sine',
-            delay: 100,
-        })
     }
 
     findBasicDetails() {
@@ -36,7 +28,7 @@ export default class About extends Component {
 
             <div>
                 <section className="page-section bg-primary text-white mb-0 " id="about">
-                    <div data-aos="fade-up" className="container">
+                    <div  className="container">
                         <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" offset="800" duration="3">
                         <h2 className="page-section-heading text-center text-uppercase text-white">About Me</h2>
 

@@ -35,7 +35,6 @@ import spark from "../images/skills/spark.png"
 import rabbit from "../images/skills/rabbit.png"
 import jira from "../images/skills/jira.webp"
 import jenkins from "../images/skills/jenkins.webp"
-import AOS from "aos";
 import ScrollAnimation from "react-animate-on-scroll";
 
 
