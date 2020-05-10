@@ -10278,15 +10278,12 @@ form .row:first-child .floating-label-form-group {
   opacity: 0;
   visibility: hidden;
 }
-.example-component.show {
-  opacity: 1;
-  visibility: visible;
-}
 
-.devicon-amazon-plain {
-  max-width: 2em;
-  max-height : 2em;
-  width : 1em;
-  height : 1em;
+
+
+
+.skillsBox {
+  height : 65px;
+  width : 65px;
 }
 

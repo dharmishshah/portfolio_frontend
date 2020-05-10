@@ -34,13 +34,14 @@ export default class PortfolioDetail extends Component {
         return (
             <section className="page-section portfolio" id="portfolioDetail">
                 <div className="container">
-                    <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" offset="300" duration="3">
-                    <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-                    <div className="divider-custom">
-                        <div className="divider-custom-line"></div>
-                        <div className="divider-custom-icon"><i className="fa fa-info-circle fa-fw"></i></div>
-                        <div className="divider-custom-line"></div>
-                    </div>
+                    <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" offset="300" duration="1">
+                        <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+                        <div className="divider-custom">
+                            <div className="divider-custom-line"></div>
+                            <div className="divider-custom-icon"><i className="fa fa-info-circle fa-fw"></i></div>
+                            <div className="divider-custom-line"></div>
+                        </div>
+                    </ScrollAnimation>
 
 
                     <div className="row">
@@ -154,7 +155,6 @@ export default class PortfolioDetail extends Component {
 
                         <PortfolioModal />
                     </div>
-                    </ScrollAnimation>
                 </div>
             </section>
         )
