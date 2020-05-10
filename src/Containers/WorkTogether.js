@@ -3,6 +3,7 @@ import PortfolioService from "../Services/PortfolioServices";
 import cookie from "react-cookies";
 import ReactRotatingText from "react-rotating-text";
 import Typing from 'react-typing-animation'
+import ScrollAnimation from "react-animate-on-scroll";
 
 export default class About extends Component {
     constructor() {
@@ -30,6 +31,7 @@ export default class About extends Component {
         return (
             <div>
                 <section className="page-section bg-primary text-white mb-0" id="about">
+                    <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" offset="300" duration="3">
                     <div className="container">
                         <h2 className="page-section-heading text-center text-uppercase text-white">Let's Work Together </h2>
                         <div className="divider-custom divider-light">
@@ -47,6 +49,7 @@ export default class About extends Component {
                             </div>
                         </div>
                     </div>
+                    </ScrollAnimation>
                 </section>
             </div>
         )

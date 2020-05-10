@@ -8,6 +8,7 @@ import p1 from '../images/img/p1.png'
 import facebook from '../images/effects/cart.gif'
 
 import ReactRotatingText from 'react-rotating-text';
+import ScrollAnimation from "react-animate-on-scroll";
 
 
 
@@ -24,6 +25,7 @@ export default class Portfolio extends Component {
         return (
             <div id="portfolio">
                 <header className="masthead bg-primary text-white text-center">
+                    <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" offset="300" duration="3">
                     <div className="container d-flex align-items-center flex-column">
                         <img className="masthead-avatar mb-5"
                              src={p1} alt=""/>
@@ -51,6 +53,7 @@ export default class Portfolio extends Component {
 
                         </div>
                     </div>
+                    </ScrollAnimation>
                 </header>
             </div>
         )

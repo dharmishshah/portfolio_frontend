@@ -35,6 +35,8 @@ import spark from "../images/skills/spark.png"
 import rabbit from "../images/skills/rabbit.png"
 import jira from "../images/skills/jira.webp"
 import jenkins from "../images/skills/jenkins.webp"
+import AOS from "aos";
+import ScrollAnimation from "react-animate-on-scroll";
 
 
 export default class SkillsMain extends Component {
@@ -50,241 +52,197 @@ export default class SkillsMain extends Component {
             height : 80,
             width : 80,
             items : ['a','b','c'],
-            isVisible : false,
+            isVisible : true,
             skillsButtonVisible : false,
             moreInfoButtonVisible : false,
             animationleftIn : "bounceInLeft",
             animationleftOut : "bounceOutLeft",
             animationRightIn : "bounceInRight",
             animationRightOut : "bounceOutRight",
+
         };
-        this.onChange = this.onChange.bind(this);
-        this.onChangeInfo = this.onChangeInfo.bind(this);
     }
 
-    onChange (isVisible) {
-        console.log('Element is now %s', isVisible ? 'visible' : 'hidden');
-        this.setState({skillsButtonVisible: isVisible})
-        this.setState({isVisible : this.state.moreInfoButtonVisible || isVisible})
-    }
-
-    onChangeInfo (isVisible) {
-        console.log('Element is now %s', isVisible ? 'visible' : 'hidden');
-        this.setState({moreInfoButtonVisible: isVisible})
-        this.setState({isVisible : this.state.skillsButtonVisible || isVisible})
-    }
 
     render() {
         return (
 
-            <div id="skills">
+            <div data-aos='fade-up' id="skills">
             <section className="page-section portfolio" id="portfolioDetail">
-
+                <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" offset="300" duration="3">
                 <div className="container">
 
                         <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">Skills</h2>
 
                     <div className="divider-custom">
-
                         <div className="divider-custom-line"></div>
                             <div className="divider-custom-icon">
-                                <VisibilitySensor onChange={this.onChange}>
-                                    <i className="fa fa-cogs fa-fw"></i>
-                                </VisibilitySensor>
+                                <i className="fa fa-cogs fa-fw"></i>
                             </div>
                         <div className="divider-custom-line"></div>
-
                     </div>
 
 
                     <div className="row">
                         <div className="col-md-3 col-lg-2 mb-5">
-                            <Animated animationIn={this.state.animationleftIn} animationOut={this.state.animationleftOut}
-                                      isVisible={this.state.isVisible}>
-                                <span><IconJava height={this.state.height} width ={this.state.width}/></span>
-                            </Animated>
+
+                            <span><IconJava height={this.state.height} width ={this.state.width}/></span>
+
                         </div>
                         <div className="col-md-3 col-lg-2 mb-5">
-                            <Animated animationIn={this.state.animationleftIn} animationOut={this.state.animationleftOut}
-                                      isVisible={this.state.isVisible}>
-                                <span><IconPython height={this.state.height} width ={this.state.width}/></span>
-                            </Animated>
+
+                            <span><IconPython height={this.state.height} width ={this.state.width}/></span>
+
                         </div>
 
                         <div className="col-md-3 col-lg-2 mb-5">
-                            <Animated animationIn={this.state.animationleftIn} animationOut={this.state.animationleftOut}
-                                      isVisible={this.state.isVisible}>
+
                             <span><IconPhp height={this.state.height} width ={this.state.width}/></span>
-                        </Animated>
+
                         </div>
                         <div className="col-md-3 col-lg-2 mb-5">
-                            <Animated animationIn={this.state.animationRightIn} animationOut={this.state.animationRightOut}
-                                      isVisible={this.state.isVisible}>
+
                             <span><IconC height={this.state.height} width ={this.state.width}/></span>
-                        </Animated>
+
                         </div>
 
                         <div className="col-md-3 col-lg-2 mb-5">
-                            <Animated animationIn={this.state.animationRightIn} animationOut={this.state.animationRightOut}
-                                      isVisible={this.state.isVisible}>
+
                             <img src={spring} height={this.state.height} width ={this.state.width} ></img>
-                        </Animated>
+
                         </div>
 
                         <div className="col-md-3 col-lg-2 mb-5">
-                            <Animated animationIn={this.state.animationRightIn} animationOut={this.state.animationRightOut}
-                                      isVisible={this.state.isVisible}>
+
                             <img src={hibernate} height={this.state.height} width ={this.state.width}></img>
-                        </Animated>
+
                         </div>
 
                         <div className="col-md-3 col-lg-2 mb-5">
-                            <Animated animationIn={this.state.animationleftIn} animationOut={this.state.animationleftOut}
-                                      isVisible={this.state.isVisible}>
+
                             <span><IconDjango height={this.state.height} width ={this.state.width}/></span>
-                            </Animated>
+
                         </div>
 
 
                         <div className="col-md-3 col-lg-2 mb-5">
-                            <Animated animationIn={this.state.animationleftIn} animationOut={this.state.animationleftOut}
-                                      isVisible={this.state.isVisible}>
+
                             <span><IconMysql height={this.state.height} width ={this.state.width}/></span>
-                            </Animated>
+
                         </div>
                         <div className="col-md-3 col-lg-2 mb-5">
-                            <Animated animationIn={this.state.animationleftIn} animationOut={this.state.animationleftOut}
-                                      isVisible={this.state.isVisible}>
+
                             <span><IconOracle height={this.state.height} width ={this.state.width}/></span>
-                            </Animated>
+
                         </div>
                         <div className="col-md-3 col-lg-2 mb-5">
-                            <Animated animationIn={this.state.animationRightIn} animationOut={this.state.animationRightOut}
-                                      isVisible={this.state.isVisible}>
+
                             <span><IconMongodb height={this.state.height} width ={this.state.width}/></span>
-                            </Animated>
+
                         </div>
 
                         <div className="col-md-3 col-lg-2 mb-5">
-                            <Animated animationIn={this.state.animationRightIn} animationOut={this.state.animationRightOut}
-                                      isVisible={this.state.isVisible}>
+
                             <img src={hadoop} height={this.state.height} width ={this.state.width}></img>
-                            </Animated>
+
                         </div>
                         <div className="col-md-3 col-lg-2 mb-5">
-                            <Animated animationIn={this.state.animationRightIn} animationOut={this.state.animationRightOut}
-                                      isVisible={this.state.isVisible}>
+
                             <img src={spark} height={this.state.height} width ={this.state.width}></img>
-                            </Animated>
+
                         </div>
 
 
                         <div className="col-md-3 col-lg-2 mb-5">
-                            <Animated animationIn={this.state.animationleftIn} animationOut={this.state.animationleftOut}
-                                      isVisible={this.state.isVisible}>
+
                             <span><IconHtml5 height={this.state.height} width ={this.state.width}/></span>
-                            </Animated>
+
                         </div>
                         <div className="col-md-3 col-lg-2 mb-5">
-                            <Animated animationIn={this.state.animationleftIn} animationOut={this.state.animationleftOut}
-                                      isVisible={this.state.isVisible}>
+
                             <span><IconCss3 height={this.state.height} width ={this.state.width}/></span>
-                            </Animated>
+
                         </div>
                         <div className="col-md-3 col-lg-2 mb-5">
-                            <Animated animationIn={this.state.animationleftIn} animationOut={this.state.animationleftOut}
-                                      isVisible={this.state.isVisible}>
+
                             <span><IconJavascript height={this.state.height} width ={this.state.width}/></span>
-                            </Animated>
+
                         </div>
                         <div className="col-md-3 col-lg-2 mb-5">
-                            <Animated animationIn={this.state.animationRightIn} animationOut={this.state.animationRightOut}
-                                      isVisible={this.state.isVisible}>
+
                             <span><IconJquery height={this.state.height} width ={this.state.width}/></span>
-                            </Animated>
+
                         </div>
                         <div className="col-md-3 col-lg-2 mb-5">
-                            <Animated animationIn={this.state.animationRightIn} animationOut={this.state.animationRightOut}
-                                      isVisible={this.state.isVisible}>
+
                             <span><IconReact height={this.state.height} width ={this.state.width}/></span>
-                            </Animated>
+
                         </div>
 
                         <div className="col-md-3 col-lg-2 mb-5">
-                            <Animated animationIn={this.state.animationRightIn} animationOut={this.state.animationRightOut}
-                                      isVisible={this.state.isVisible}>
+
                             <img src={reactNative} height={this.state.height} width ={this.state.width}></img>
-                            </Animated>
+
                         </div>
 
 
 
                         <div className="col-md-3 col-lg-2 mb-5">
-                            <Animated animationIn={this.state.animationleftIn} animationOut={this.state.animationleftOut}
-                                      isVisible={this.state.isVisible}>
+
                             <img src={redux} height={this.state.height} width ={this.state.width}></img>
-                            </Animated>
+
                         </div>
 
                         <div className="col-md-3 col-lg-2 mb-5">
-                            <Animated animationIn={this.state.animationleftIn} animationOut={this.state.animationleftOut}
-                                      isVisible={this.state.isVisible}>
+
                             <span><IconAngularjs height={this.state.height} width ={this.state.width}/></span>
-                            </Animated>
+
                         </div>
                         <div className="col-md-3 col-lg-2 mb-5">
-                            <Animated animationIn={this.state.animationleftIn} animationOut={this.state.animationleftOut}
-                                      isVisible={this.state.isVisible}>
+
                             <span><IconNodejs height={this.state.height} width ={this.state.width}/></span>
-                            </Animated>
+
                         </div>
 
 
 
                         <div className="col-md-3 col-lg-2 mb-5">
-                            <Animated animationIn={this.state.animationRightIn} animationOut={this.state.animationRightOut}
-                                      isVisible={this.state.isVisible}>
+
                             <span><IconAmazonwebservices height={this.state.height} width ={this.state.width}/></span>
-                            </Animated>
+
                         </div>
 
                         <div className="col-md-3 col-lg-2 mb-5">
-                            <Animated animationIn={this.state.animationRightIn} animationOut={this.state.animationRightOut}
-                                      isVisible={this.state.isVisible}>
+
                             <span><IconGit height={this.state.height} width ={this.state.width}/></span>
-                            </Animated>
+
                         </div>
 
                         <div className="col-md-3 col-lg-2 mb-5">
-                            <Animated animationIn={this.state.animationRightIn} animationOut={this.state.animationRightOut}
-                                      isVisible={this.state.isVisible}>
+
                             <img src={jenkins} height={this.state.height} width ={this.state.width}></img>
-                            </Animated>
+
                         </div>
                         <div className="col-md-3 col-lg-2 mb-5">
-                            <Animated animationIn={this.state.animationleftIn} animationOut={this.state.animationleftOut}
-                                      isVisible={this.state.isVisible}>
+
                             <img src={rabbit} height={this.state.height} width ={this.state.width}></img>
-                            </Animated>
+
                         </div>
 
                         <div className="col-md-3 col-lg-2 mb-5">
-                            <Animated animationIn={this.state.animationleftIn} animationOut={this.state.animationleftOut}
-                                      isVisible={this.state.isVisible}>
+
                             <img src={jira} height={this.state.height} width ={this.state.width}></img>
-                            </Animated>
                         </div>
                     </div>
 
                     <div className="form-group text-center mt-4">
-                        <VisibilitySensor onChange={this.onChangeInfo}>
                             <button className="btn btn-primary btn-sendmail" data-toggle="modal"
                                     data-target="#portfolioModal3"
                                     type="submit"> More Info <i className="fa fa-angle-double-right fa-fw"/>
                             </button>
-                        </VisibilitySensor>
                     </div>
                 </div>
+                </ScrollAnimation>
             </section>
             </div>
         )

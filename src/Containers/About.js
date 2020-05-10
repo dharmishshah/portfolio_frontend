@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import PortfolioService from "../Services/PortfolioServices";
 import cookie from "react-cookies";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 export default class About extends Component {
     constructor() {
@@ -14,6 +17,12 @@ export default class About extends Component {
 
     componentDidMount() {
         this.findBasicDetails();
+        AOS.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,
+        })
     }
 
     findBasicDetails() {
@@ -24,10 +33,14 @@ export default class About extends Component {
 
     render() {
         return (
+
             <div>
-                <section className="page-section bg-primary text-white mb-0" id="about">
-                    <div className="container">
-                        <h2 className="page-section-heading text-center text-uppercase text-white">About</h2>
+                <section className="page-section bg-primary text-white mb-0 " id="about">
+                    <div data-aos="fade-up" className="container">
+                        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" offset="800" duration="3">
+                        <h2 className="page-section-heading text-center text-uppercase text-white">About Me</h2>
+
+
                         <div className="divider-custom divider-light">
                             <div className="divider-custom-line"></div>
                             <div className="divider-custom-icon"><i className="fa fa-user fa-fw"></i></div>
@@ -47,6 +60,7 @@ export default class About extends Component {
                                target="_blank" href={this.state.details.length > 0 && this.state.details[0].fields.resumeLink}><i
                                 className="fa fa-file fa-fw"></i>Have a look at my Resume</a>
                         </div>
+                        </ScrollAnimation>
                     </div>
                 </section>
             </div>

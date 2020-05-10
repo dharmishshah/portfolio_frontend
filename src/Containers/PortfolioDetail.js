@@ -14,6 +14,7 @@ import personal_ai from "../images/effects/personal.gif"
 import recommendation from "../images/effects/recommendations.gif"
 import publication from "../images/effects/publication.gif"
 import workingroom from "../images/effects/working-room.gif"
+import ScrollAnimation from "react-animate-on-scroll";
 
 export default class PortfolioDetail extends Component {
     constructor() {
@@ -33,6 +34,7 @@ export default class PortfolioDetail extends Component {
         return (
             <section className="page-section portfolio" id="portfolioDetail">
                 <div className="container">
+                    <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" offset="300" duration="3">
                     <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
                     <div className="divider-custom">
                         <div className="divider-custom-line"></div>
@@ -152,6 +154,7 @@ export default class PortfolioDetail extends Component {
 
                         <PortfolioModal />
                     </div>
+                    </ScrollAnimation>
                 </div>
             </section>
         )

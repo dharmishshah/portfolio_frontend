@@ -1,6 +1,7 @@
 import React, {Component, createRef} from 'react';
 import PortfolioService from "../Services/PortfolioServices";
 import cookie from "react-cookies";
+import ScrollAnimation from "react-animate-on-scroll";
 
 
 export default class HomePageContainer extends Component {
@@ -42,6 +43,7 @@ export default class HomePageContainer extends Component {
             <div>
                 <section className="page-section" id="contact">
                     <div className="container">
+                        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" offset="600" duration="3">
                         <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">Contact
                             Me</h2>
                         <div className="divider-custom">
@@ -99,6 +101,7 @@ export default class HomePageContainer extends Component {
                                 </form>
                             </div>
                         </div>
+                        </ScrollAnimation>
                     </div>
                 </section>
             </div>
