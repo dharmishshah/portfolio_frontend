@@ -29,7 +29,7 @@ export default class About extends Component {
             <div>
                 <section className="page-section bg-primary text-white mb-0 " id="about">
                     <div  className="container">
-                        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" offset="100" duration="2">
+                        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" duration="2">
                         <h2 className="page-section-heading text-center text-uppercase text-white">About Me</h2>
 
 
