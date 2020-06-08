@@ -34,7 +34,7 @@ export default class EducationMain extends Component {
                             <h2 className="page-section-heading text-center text-uppercase text-white">Education</h2>
                             <div className="divider-custom divider-light">
                                 <div className="divider-custom-line"></div>
-                                <div className="divider-custom-icon"><i className="fa fa-code fa-fw"></i></div>
+                                <div className="divider-custom-icon"><i className="fa fa-graduation-cap fa-fw"></i></div>
                                 <div className="divider-custom-line"></div>
                             </div>
                         </ScrollAnimation>

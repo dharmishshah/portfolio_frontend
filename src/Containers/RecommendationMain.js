@@ -36,7 +36,7 @@ export default class RecommendationMain extends Component {
 
                             <div className="divider-custom divider-light">
                                 <div className="divider-custom-line"></div>
-                                <div className="divider-custom-icon"><i className="fa fa-user fa-fw"></i></div>
+                                <div className="divider-custom-icon"><i className="fa fa-comments fa-fw"></i></div>
                                 <div className="divider-custom-line"></div>
                             </div>
                         </ScrollAnimation>

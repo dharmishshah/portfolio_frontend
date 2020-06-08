@@ -43,7 +43,7 @@ export default class PublicationMain extends Component {
                             <div className="divider-custom">
                                 <div className="divider-custom-line"></div>
                                 <div className="divider-custom-icon">
-                                    <i className="fa fa-cogs fa-fw"></i>
+                                    <i className="fa fa-certificate fa-fw"></i>
                                 </div>
                                 <div className="divider-custom-line"></div>
                             </div>

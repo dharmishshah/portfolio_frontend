@@ -33,7 +33,7 @@ export default class EducationRow extends Component {
     render() {
         return (
             <div>
-                {window.innerWidth > 760 &&  <div>
+                {window.innerWidth > 450 &&  <div>
                     {this.state.recommendations.map((recommendation, index) => {
                         return (
 
@@ -69,7 +69,7 @@ export default class EducationRow extends Component {
                 </div>}
 
 
-                {window.innerWidth >200 && window.innerWidth < 760 && <div>
+                {window.innerWidth > 200 && window.innerWidth < 425 && <div>
             {this.state.recommendations.map((recommendation, index) => {
                     return (
 
