@@ -26,6 +26,7 @@
     "react-dropzone": "^4.2.11",
     "react-fontawesome": "^1.7.1",
     "react-horizontal-timeline": "^1.5.3",
+    "react-intersection-observer": "^8.26.2",
     "react-lottie": "^1.2.3",
     "react-responsive-carousel": "^3.1.41",
     "react-responsive-modal": "^3.0.3",
