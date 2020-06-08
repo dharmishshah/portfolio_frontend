@@ -68,8 +68,8 @@ export default class SkillsMain extends Component {
                 <section className="page-section portfolio" >
                     <div className="container">
                         <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" offset="300" duration="1">
-
                             <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">Projects</h2>
+
                             <div className="divider-custom">
                                 <div className="divider-custom-line"></div>
                                 <div className="divider-custom-icon">
@@ -78,9 +78,8 @@ export default class SkillsMain extends Component {
                                 <div className="divider-custom-line"></div>
                             </div>
                         </ScrollAnimation>
-
                             <ProjectsTimeline/>
-                    </div>
+                        </div>
                 </section>
             </div>
         )
