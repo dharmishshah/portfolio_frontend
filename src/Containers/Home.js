@@ -28,8 +28,19 @@ export default class HomePageContainer extends Component {
             experiences: [],
             education: [],
             skills: [],
-            projects: []
+            projects: [],
+            loading : true
         };
+    }
+
+    componentDidMount() {
+        this.findAllCertificates();
+    }
+
+    findAllCertificates() {
+        this.portfolioService.findAllCertificates().then(certificates => {
+            this.setState({loading: false})
+        });
     }
 
     render() {
@@ -37,28 +48,7 @@ export default class HomePageContainer extends Component {
         return(
 
             <div className="default-homepage">
-
-                <Header />
-                <Portfolio />
-                <ExperiencesMain />
-                <EducationMain />
-                <ProjectsMain/>
-
-                <About />
-                <SkillsMain />
-                <RecommendationMain/>
-                <PublicationMain/>
-                <WorkTogether />
-                <Contact />
-                <Footer />
-
-                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-
-                <script src="public/mail/jqBootstrapValidation.js"></script>
-
-                <script src="public/mail/contact_me.js"></script>
-                <script src="scripts/scripts.js"></script>
+                {loading ? <LoadingSpinner /> : <ResultsTable results={data} />}
             </div>
         )
     }

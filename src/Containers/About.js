@@ -48,9 +48,9 @@ export default class About extends Component {
                             </p></div>
                         </div>
                         <div className="text-center mt-4">
-                            <a className="btn btn-xl btn-outline-light"
+                            <a className="btn btn-large btn-outline-light"
                                target="_blank" href={this.state.details.length > 0 && this.state.details[0].fields.resumeLink}><i
-                                className="fa fa-file fa-fw"></i>Have a look at my Resume</a>
+                                className="fa fa-file fa-fw"></i>Resume</a>
                         </div>
                         </ScrollAnimation>
                     </div>

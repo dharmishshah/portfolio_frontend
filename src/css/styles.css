@@ -10045,6 +10045,11 @@ h3 {
   font-size: 1.25rem;
 }
 
+.btn-large {
+  padding: 0.75rem 0.75rem;
+  font-size: 1.25rem;
+}
+
 .btn-social {
   border-radius: 100%;
   display: inline-flex;
@@ -10258,6 +10263,12 @@ form .row:first-child .floating-label-form-group {
   background-color: #1a252f;
 }
 
+@media screen and (max-width: 760px){
+  .site-container {
+    flex-direction: row;
+  }
+}
+
 
 .typeDiv {
   padding-top: 3rem;
@@ -10279,11 +10290,55 @@ form .row:first-child .floating-label-form-group {
   visibility: hidden;
 }
 
-
-
-
 .skillsBox {
   height : 65px;
   width : 65px;
 }
+
+.projectsIcon {
+  margin-top: 0.9rem ;
+  text-align:center
+}
+
+.vertical-timeline.vertical-timeline-custom-line::before {
+  background: #2c3e50 ;
+  background: #2c3e50 ;
+}
+
+
+.dateContent {
+  color : #2c3e50
+}
+
+.how-section1{
+  margin-top:-15%;
+  padding: 10%;
+}
+.how-section1 h4{
+  color: #ffa500;
+  font-weight: bold;
+  font-size: 30px;
+}
+.how-section1 .subheading{
+  color: #3931af;
+  font-size: 20px;
+}
+.how-section1 .row
+{
+  margin-top: 10%;
+}
+.how-img
+{
+  text-align: center;
+  margin-top: 3rem;
+}
+.how-img img{
+  width: 40%;
+}
+
+.recommendationMargin {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 

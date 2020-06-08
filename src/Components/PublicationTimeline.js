@@ -5,25 +5,25 @@ import cookie from "react-cookies";
 import '../css/styles.css';
 import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
 
-export default class EducationRow extends Component {
+export default class PublicationRow extends Component {
 
     constructor() {
         super();
         this.portfolioService = PortfolioService.instance;
 
         this.state = {
-            recommendations: [],
+            publications: [],
 
         };
     }
 
     componentDidMount() {
-        this.findAllRecommendations();
+        this.findAllPublications();
     }
 
-    findAllRecommendations() {
-        this.portfolioService.findAllRecommendations().then(recommendations => {
-            this.setState({recommendations: recommendations})
+    findAllPublications() {
+        this.portfolioService.findAllPublications().then(publications => {
+            this.setState({publications: publications})
         });
     }
 
@@ -85,6 +85,7 @@ export default class EducationRow extends Component {
                         <img src="https://image.ibb.co/gQ9iE9/Work_Section2_freelance_img4.png" className="rounded-circle img-fluid" alt=""/>
                     </div>
                 </div>
+            </div>
             </div>
         )
     }

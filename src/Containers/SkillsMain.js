@@ -78,114 +78,117 @@ export default class SkillsMain extends Component {
                     </ScrollAnimation>
 
 
-                    <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" offset="300" duration="3">
-                    <div className="row">
 
-                        <div className="col-md-3 col-lg-2 mb-5">
+
+
+                    <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" offset="300" duration="3">
+                        <div className="row">
+
+                            <div className="col-xs-3 col-4  col-sm-3 col-md-3 col-lg-2 mb-5">
                             <span>
                                 <Java  />
                             </span>
-                        </div>
-                        <div className="col-md-3 col-lg-2 mb-5">
+                            </div>
+                            <div className="col-xs-3 col-4  col-sm-3 col-md-3 col-lg-2 mb-5">
                            <span>
                                 <Python  />
                             </span>
-                        </div>
+                            </div>
 
-                        <div className="col-md-3 col-lg-2 mb-5">
+                            <div className="col-xs-3 col-4  col-sm-3 col-md-3 col-lg-2 mb-5">
                             <span>
                                 <PHP  />
                             </span>
-                        </div>
-                        <div className="col-md-3 col-lg-2 mb-5">
+                            </div>
+                            <div className="col-4  col-sm-3 col-md-3 col-lg-2 mb-5">
                            <span>
                                 <C  />
                             </span>
-                        </div>
+                            </div>
 
-                        <div className="col-md-3 col-lg-2 mb-5">
-                            <img src={spring} height={this.state.height} width ={this.state.width} ></img>
-                        </div>
+                            <div className="col-4  col-sm-3 col-md-3 col-lg-2 mb-5">
+                                <img src={spring} height={this.state.height} width ={this.state.width} ></img>
+                            </div>
 
-                        <div className="col-md-3 col-lg-2 mb-5">
-                            <img src={hibernate} height={this.state.height} width ={this.state.width}></img>
-                        </div>
+                            <div className="col-4  col-sm-3 col-md-3 col-lg-2 mb-5">
+                                <img src={hibernate} height={this.state.height} width ={this.state.width}></img>
+                            </div>
 
-                        <div className="col-md-3 col-lg-2 mb-5">
-                            <Django/>
-                        </div>
-
-
-                        <div className="col-md-3 col-lg-2 mb-5">
-                           <MySQL/>
-                        </div>
-                        <div className="col-md-3 col-lg-2 mb-5">
-                           <Oracle/>
-                        </div>
-                        <div className="col-md-3 col-lg-2 mb-5">
-                            <Mongodb/>
-                        </div>
-
-                        <div className="col-md-3 col-lg-2 mb-5">
-                            <img src={hadoop} height={this.state.height} width ={this.state.width}></img>
-                        </div>
-                        <div className="col-md-3 col-lg-2 mb-5">
-                            <img src={spark} height={this.state.height} width ={this.state.width}></img>
-                        </div>
+                            <div className="col-4  col-sm-3 col-md-3 col-lg-2 mb-5">
+                                <Django/>
+                            </div>
 
 
-                        <div className="col-md-3 col-lg-2 mb-5">
-                            <HTML/>
+                            <div className="col-4  col-sm-3 col-md-3 col-lg-2 mb-5">
+                                <MySQL/>
+                            </div>
+                            <div className="col-4  col-sm-3 col-md-3 col-lg-2 mb-5">
+                                <Oracle/>
+                            </div>
+                            <div className="col-4  col-sm-3 col-md-3 col-lg-2 mb-5">
+                                <Mongodb/>
+                            </div>
+
+                            <div className="col-4  col-sm-3 col-md-3 col-lg-2 mb-5">
+                                <img src={hadoop} height={this.state.height} width ={this.state.width}></img>
+                            </div>
+                            <div className="col-4  col-sm-3 col-md-3 col-lg-2 mb-5">
+                                <img src={spark} height={this.state.height} width ={this.state.width}></img>
+                            </div>
+
+
+                            <div className="col-4  col-sm-3 col-md-3 col-lg-2 mb-5">
+                                <HTML/>
+
+                            </div>
+                            <div className="col-4  col-sm-3 col-md-3 col-lg-2 mb-5">
+                                <CSS/>
+                            </div>
+                            <div className="col-4  col-sm-3 col-md-3 col-lg-2 mb-5">
+                                <Javascript/>
+                            </div>
+                            <div className="col-4  col-sm-3 col-md-3 col-lg-2 mb-5">
+                                <JQuery/>
+                            </div>
+                            <div className="col-4  col-sm-3 col-md-3 col-lg-2 mb-5">
+                                <ReactJS/>
+                            </div>
+                            <div className="col-4  col-sm-3 col-md-3 col-lg-2 mb-5">
+                                <Angular/>
+                            </div>
+
+                            <div className="col-4  col-sm-3 col-md-3 col-lg-2 mb-5">
+                                <img src={reactNative} height={this.state.height} width ={this.state.width}></img>
+                            </div>
+
+                            <div className="col-4  col-sm-3 col-md-3 col-lg-2 mb-5">
+                                <img src={redux} height={this.state.height} width ={this.state.width}></img>
+                            </div>
+
+                            <div className="col-4  col-sm-3 col-md-3 col-lg-2 mb-5">
+                                <NodeJS/>
+                            </div>
+
+                            <div className="col-4  col-sm-3 col-md-3 col-lg-2 mb-5">
+                                <AWS/>
+                            </div>
+
+                            <div className="col-4  col-sm-3 col-md-3 col-lg-2 mb-5">
+                                <Git/>
+                            </div>
+
+                            <div className="col-4  col-sm-3 col-md-3 col-lg-2 mb-5">
+                                <img src={jenkins} height={this.state.height} width ={this.state.width}></img>
+                            </div>
+                            <div className="col-4  col-sm-3 col-md-3 col-lg-2 mb-5">
+                                <img src={rabbit} height={this.state.height} width ={this.state.width}></img>
+                            </div>
+
+                            <div className="col-4  col-sm-3 col-md-3 col-lg-2 mb-5">
+                                <img src={jira} height={this.state.height} width ={this.state.width}></img>
+                            </div>
 
                         </div>
-                        <div className="col-md-3 col-lg-2 mb-5">
-                            <CSS/>
-                        </div>
-                        <div className="col-md-3 col-lg-2 mb-5">
-                            <Javascript/>
-                        </div>
-                        <div className="col-md-3 col-lg-2 mb-5">
-                            <JQuery/>
-                        </div>
-                        <div className="col-md-3 col-lg-2 mb-5">
-                            <ReactJS/>
-                        </div>
-                        <div className="col-md-3 col-lg-2 mb-5">
-                            <Angular/>
-                        </div>
-
-                        <div className="col-md-3 col-lg-2 mb-5">
-                            <img src={reactNative} height={this.state.height} width ={this.state.width}></img>
-                        </div>
-
-                        <div className="col-md-3 col-lg-2 mb-5">
-                            <img src={redux} height={this.state.height} width ={this.state.width}></img>
-                        </div>
-
-                        <div className="col-md-3 col-lg-2 mb-5">
-                            <NodeJS/>
-                        </div>
-
-                        <div className="col-md-3 col-lg-2 mb-5">
-                            <AWS/>
-                        </div>
-
-                        <div className="col-md-3 col-lg-2 mb-5">
-                           <Git/>
-                        </div>
-
-                        <div className="col-md-3 col-lg-2 mb-5">
-                            <img src={jenkins} height={this.state.height} width ={this.state.width}></img>
-                        </div>
-                        <div className="col-md-3 col-lg-2 mb-5">
-                            <img src={rabbit} height={this.state.height} width ={this.state.width}></img>
-                        </div>
-
-                        <div className="col-md-3 col-lg-2 mb-5">
-                            <img src={jira} height={this.state.height} width ={this.state.width}></img>
-                        </div>
-
-                    </div>
                     </ScrollAnimation>
 
                     <div className="form-group text-center mt-4">
