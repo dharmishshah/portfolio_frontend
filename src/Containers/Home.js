@@ -48,7 +48,7 @@ export default class HomePageContainer extends Component {
         return(
 
             <div className="default-homepage">
-                {loading ? <LoadingSpinner /> : <ResultsTable results={data} />}
+
             </div>
         )
     }
