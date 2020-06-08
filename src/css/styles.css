@@ -10341,4 +10341,18 @@ form .row:first-child .floating-label-form-group {
   margin-bottom: 2rem;
 }
 
+.carousel .carousel-indicators .active {
+  background-color: black;
+}
+
+.carousel .carousel-control-prev-icon,
+.carousel .carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  border: 1px solid black;
+  background-image: none;
+  background-color: green;
+}
+
 

@@ -43,6 +43,8 @@ export default class CertificateCarousel extends Component {
                         showControls={true}
                         showIndicators={true}
                         className="z-depth-1"
+                        testimonial={true}
+
                     >
                         <MDBCarouselInner>
                                 {this.state.certificates.map((certificate,index) => {
