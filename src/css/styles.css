@@ -10355,4 +10355,28 @@ form .row:first-child .floating-label-form-group {
   background-color: green;
 }
 
+.projects-btn-secondary{
+  color: #1a252f;
+  background-color: white;
+  border-color: #1a252f;
+  margin-left: 5px;
+}
+
+.projects-row{
+  margin-top: 5px;
+}
+
+.recommendations .fa-quote-left .fa-quote-left{
+  font-size: 10px;
+  padding-left : 2px;
+  padding-right:2px;
+}
+
+.recommendations .left {
+  padding-right : 0.5em;
+}
+
+.recommendations .right {
+  padding-left : 0.5em;
+}
 

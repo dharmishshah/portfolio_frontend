@@ -8,6 +8,7 @@ import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } fr
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import dateFormat from 'dateformat'
+import {IconButton} from "material-ui";
 
 export default class EducationRow extends Component {
 
@@ -66,6 +67,19 @@ export default class EducationRow extends Component {
                                             </li>
                                         )
                                     })}
+                                        <div className="align-items-center text-center projects-row">
+                                            {project.fields.link &&
+                                            <Button href = {project.fields.link}
+                                                    target="_blank" className="projects-btn-secondary"
+                                                    variant="outline-dark">
+                                                <i className="fa fa-eye fa-fw"></i> View </Button>}
+                                            {project.fields.imageLink &&
+                                                <Button href = {project.fields.imageLink}
+                                                        onClick="location.href=www.google.com;"
+                                                        target="_blank" className="projects-btn-secondary" variant="outline-dark">
+                                                    <i className="fa fa-github fa-fw"></i>Github</Button>}
+                                        </div>
+
                             </VerticalTimelineElement>
                     )
                 })}

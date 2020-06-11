@@ -44,8 +44,9 @@ export default class EducationRow extends Component {
                                             <h4>{recommendation.fields.name}</h4>
                                             <h5>{recommendation.fields.role + ", " + recommendation.fields.organisation}</h5>
                                         </div>
-                                        <div className="col-md-6 lead aboutme-text">
-                                            <p>{"\"" + recommendation.fields.description + "\""}</p>
+                                        <div className="col-md-6 lead aboutme-text recommendations">
+                                            <p><sup className="left"><i className=" fa fa-quote-left "/></sup>{recommendation.fields.description}
+                                                <sup className="right"><i className=" fa fa-quote-right "/></sup></p>
                                         </div>
                                     </div>
                                     }
@@ -53,8 +54,9 @@ export default class EducationRow extends Component {
                                 {index % 2 === 1 &&
                                 <div className="row recommendationMargin">
 
-                                    <div className="col-md-6 lead aboutme-text">
-                                        <p>{"\"" + recommendation.fields.description + "\""}</p>
+                                    <div className="col-md-6 lead aboutme-text recommendations">
+                                        <p><sup className="left"><i className=" fa fa-quote-left "/></sup>{recommendation.fields.description}
+                                            <sup className="right"><i className=" fa fa-quote-right "/></sup></p>
                                     </div>
                                     <div className="col-md-6 how-img">
                                         <h4>{recommendation.fields.name}</h4>

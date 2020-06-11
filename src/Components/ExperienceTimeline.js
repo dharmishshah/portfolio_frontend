@@ -44,7 +44,7 @@ export default class ExperienceRow extends Component {
                                 >
                                     <h3>{experience.fields.role} </h3>
                                     <h4>{experience.fields.company}, {experience.fields.city}</h4>
-                                        {experience.fields.description.split("\n").map(descrip => {
+                                        {experience.fields.description.split("\\n").map(descrip => {
                                             return (
                                                 <li className="description-font">
                                                     {descrip}
